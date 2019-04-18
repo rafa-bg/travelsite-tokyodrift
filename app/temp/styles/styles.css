@@ -997,14 +997,12 @@ a {
 		margin: 0.25rem 0 1rem 0;
 	}
 
-/*
-No modificar modules/_sprite directamente debido a que es generado automaticamente por GULP
-En vez de eso, edita gulp/templates/sprite
-*/
+/*No editar modules_sprites debido a que es generado automaticamente por Gulp
+en vez de eso, edita gulp/templates/sprite*/
 
 .icon {
-			background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
-		}
+		background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
+	}
 
 .icon--clear-view-escapes {
 		width: 142.4px;
