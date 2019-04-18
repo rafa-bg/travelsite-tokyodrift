@@ -1,15 +1,16 @@
-function Person(fullName, favColor) {
-	this.name = fullName;
-	this.favoriteColor = favColor;
-	this.greet = function() {
-		console.log("Hello, my name is " + this.name + " and my favorite color is " + this.favoriteColor + ".");
+var $ = require('jquery');
+import Person from './modules/Person';
+
+class Adult extends Person{
+	payTaxes() {
+		console.log(this.name + " now owes $0 in taxes");
 	}
 }
 
-var john = new Person("John Doe", "blue");
 
+var john = new Person("John Doe", "blue");
 john.greet();
 
-var jane = new Person("Jane Smith", "green");
-
+var jane = new Adult("Jane Smith", "orange");
 jane.greet();
+jane.payTaxes();
