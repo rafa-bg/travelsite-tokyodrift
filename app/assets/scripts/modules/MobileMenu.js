@@ -22,7 +22,7 @@ class MobileMenu {
 export default MobileMenu;
 
 
-//linea 11
+//linea 12
 // cuando dices: this.togglethemenu, js cree que estas hablando
 // de this como "this menuIcon", apunta al elemento del DOM
 // lo que tu quieres es this, pero como la clase Mobile menu
